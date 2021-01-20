@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+   <body>
+      <table border = 1>
+         <thead>
+            <td>Full Name</td>
+            <td>Screen Name</td>
+            <td>Identity</td>
+         </thead>
+         
+         {% for row in rows %}
+            <tr>
+               <td>{{row["Full_Name"]}}</td>
+               <td>{{row["Screen_Name"]}}</td>
+               <td>{{row["Identity"]}}</td>
+            </tr>
+         {% endfor %}
+      </table>
+      
+   </body>
+</html>
